@@ -1,0 +1,276 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/* add outline to text
+text-shadow: -1px 1px 0 black,
+               1px 1px 0 black,
+               1px -1px 0 black,
+               -1px -1px 0 black; */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(70, 255, 54);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f849f1e6-b991-4b89-bd9b-7b86ae209054/d7xlmxx-9234814c-2ab7-4378-858a-3adf3b72a9f5.png/v1/fill/w_1024,h_576,q_80,strp/cielo_dragon_ball_by_lwisf3rxd_d7xlmxx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZjg0OWYxZTYtYjk5MS00Yjg5LWJkOWItN2I4NmFlMjA5MDU0XC9kN3hsbXh4LTkyMzQ4MTRjLTJhYjctNDM3OC04NThhLTNhZGYzYjcyYTlmNS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vf0eqZkZZ05d_COmi_UwtA2GAE95e410zDKLmIwQLUs);
+  /* background-image:  */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* **************************
+Background images
+****************************** */
+
+/* imgTwo.jpg */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  text-align: center;
+  font-size: 10rem;
+  background-color: rgba(255, 224, 63);
+  margin-bottom: 20rem;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
+h1, h2{
+  padding: 3rem;
+  color: rgb(227, 0, 15);
+  text-shadow: -1px 1px 2px rgb(0, 0, 0),
+                1px 1px 2px rgb(0, 0, 0),
+                1px -1px 2px rgb(0, 0, 0),
+                -1px -1px 2px rgb(0, 0, 0) ;
+}
+
+h2{
+  display: none;
+}
+#what, #yay{
+  font-size: 22rem;
+  padding: 5rem auto;
+  background-color: rgba(0, 0, 0, 0.781);
+  display: none;
+  text-align: center;
+}
+
+/* MAIN */
+
+.mainGok{
+  position: absolute;
+  z-index: 5;
+  top: 12%;
+  left: 5%;
+  background-color: rgba(250, 235, 215, 0);
+  height: 84rem;
+  width: auto;
+}
+
+
+.first, .second{
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 5;
+
+}
+
+/* Create Animation that makes the element button clicked "FLY" out of the page */
+
+#yes, #no, #yah, #nah{
+  height: 40rem;
+  width: 60rem;
+  line-height: 20rem;
+}
+
+#yes, #no, #yah, #nah{
+  background-color: rgba(245, 245, 220, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://www.pngkit.com/png/full/346-3464773_share-this-image-flying-nimbus-transparent.png);              
+  font-size: 15rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: rgb(227, 0, 15);
+  border: none;
+  text-shadow:  -10px 10px 25px rgb(0, 0, 0),
+                  10px 10px 25px rgb(0, 0, 0),
+                  10px -10px 25px rgb(0, 0, 0),
+                  -10px -10px 25px rgb(0, 0, 0) ;
+}
+h4{
+  padding-right: 17rem;
+}
+
+/* 88888888888888888888888888888888
+             EVAL QUESTIONS
+8888888888888888888888888888888888888*/
+
+#bulma{
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  left: 65%;
+  background-color: rgba(250, 235, 215, 0);
+  /* height: 84rem; */
+  height: auto;
+  width: 30%;
+  display: none;
+}
+
+div{
+  display: none;
+  justify-content: center;
+}
+
+#episode{
+  position: absolute;
+  z-index: 2;
+  width: 100rem;
+  height: 50rem;
+  background-color: rgba(255, 223, 63, 0);
+  background-image: url(https://www.pngkit.com/png/full/346-3464773_share-this-image-flying-nimbus-transparent.png);
+  background-repeat: no-repeat;
+  background-size: contain;   
+}
+#episode form{
+  font-size: 4.5rem;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%); 
+  padding-left: 4rem;
+  text-align: center;
+  color: rgb(227, 0, 15);
+  text-shadow: -1px 1px 2px rgb(0, 0, 0),
+                1px 1px 2px rgb(0, 0, 0),
+                1px -1px 2px rgb(0, 0, 0),
+                -1px -1px 2px rgb(0, 0, 0) ;
+}
+#episode input{
+  background-color: black;
+  height: 5rem;
+  width: 10rem;
+  color: rgb(227, 0, 15);
+  font-size: 4.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+}
+
+#submit{
+  background-color: black;
+  color: rgb(227, 0, 15);
+  font-family: 'Courier New', Courier, monospace;
+  height: 4.75rem;
+  font-size: 4rem;
+}
+
+
+/* *****************************
+                Quarters
+********************************* */
+
+.quarters{
+  color:rgb(227, 0, 15) ;
+  margin-top: 10%;
+  padding-top: 8%;
+  text-shadow: -1px 1px 2px rgb(57, 34, 6),
+                1px 1px 2px rgb(57, 34, 6),
+                1px -1px 2px rgb(57, 34, 6),
+                -1px -1px 2px rgb(57, 34, 6) ;
+}
+.qLink{
+  text-decoration: none;
+  color: rgb(242, 129, 0);
+  text-shadow: -1px 1px 2px rgb(0, 0, 0),
+                1px 1px 2px rgb(0, 0, 0),
+                1px -1px 2px rgb(0, 0, 0),
+                -1px -1px 2px rgb(0, 0, 0) ;
+}
+.qLink:hover{
+  text-decoration: dotted;
+  color: rgb(99, 0, 118);
+  text-shadow: -1px 1px 2px rgb(255, 255, 255),
+                1px 1px 2px rgb(255, 255, 255),
+                1px -1px 2px rgb(255, 255, 255),
+                -1px -1px 2px rgb(255, 255, 255) ;
+}
+.piggyBank{
+  background-color: rgba(255, 224, 63, 0.950);
+  text-align: center;
+  line-height: 4rem;
+  box-shadow: -1px 1px 30px rgb(0, 0, 0),
+              1px 1px 30px rgb(0, 0, 0),
+                1px -1px 30px rgb(0, 0, 0),
+                -1px -1px 30px rgb(0, 0, 0) ;
+}
+.piggyBank{
+  width: 30%;
+  height: 20rem;
+  position: relative;
+  left: 10%;
+  border-radius: 3px;
+}
+
+#veg{
+  position: absolute;
+  width: 45%;
+  top: -9%;
+  left: 50%;
+}
+
+#krill{
+  position: absolute;
+  width: 45%;
+  top: -15%;
+  left: 50%;
+}
+#pickle{
+  position: absolute;
+  width: 50%;
+  top: 5%;
+  left: 45%;
+}
+#shorts{
+  position: absolute;
+  width: 45%;
+  top: -9%;
+  left: 50%;
+}
+
+#firstQ, #secondQ, #thirdQ, #fourthQ{
+  display: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
